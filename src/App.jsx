@@ -1,5 +1,5 @@
 import "./App.css";
-import { data } from "./data";
+import { data } from "./static/data";
 import { github, profileImg, slack, zuri, I4G, shareBg, shareSm } from "./assets";
 
 function App() {

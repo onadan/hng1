@@ -48,11 +48,11 @@ a {
 
 hr {
   opacity: 0.4;
-  margin: 2rem 0;
+  margin-top: 5rem;
 }
 
 footer {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,11 +74,15 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
+  color: #475467;
 }
 
 .contact input,
-label, textarea {
-  display: block;
+textarea {
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  border: 1px solid #d0d5dd;
+  outline: none;
 }
 
 .contact__body {
@@ -89,29 +93,62 @@ label, textarea {
 .contact__header h1 {
   font-weight: 600;
   font-size: 2.25rem;
+  color: #101828;
 }
 
-.contact_header p {
+.contact__header p {
   font-size: 1.25rem;
 }
 
-.contact__body input {
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
-.contact__body textarea {
-  margin-bottom: 1rem;
-  width: 100%;
-}
 
 .contact__body label {
   font-weight: 500;
   font-size: 0.875rem;
+  line-height: 14px;
+  padding: 0.4rem 0;
 }
 
-.contact__body .splitted {
+.contact__body .flex-col {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  margin: 1rem 0.1rem;
+}
+
+.contact__body .accept > label{
+  padding-left: .5rem;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.contact__body #btn__submit {
+  color: #fff;
+  background-color: #1570ef;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 3rem 0;
+  cursor: pointer;
+}
+
+#hint {
+  font-size: 400;
+  font-size: 0.875rem;
+  margin: 0;
+  padding: .2rem;
+  color: red;
+}
+
+@media (min-width: 700px) {
+  .contact__body .splitted .flex-col {
+    width: 100%;
+    margin: 0;
+  }
+  .contact__body .splitted {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
 }

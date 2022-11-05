@@ -2,6 +2,7 @@ export const data = [
   {
     id: 'btn__twitter',
     name: "Twitter Link",
+    link: "https://twitter.com/1DanielOnaolapo/",
   },
   {
     id: "btn__zuri",
@@ -28,4 +29,11 @@ export const data = [
     name: "Design Books",
     link: "https://books.zuri.team/design-rules",
   },
+  {
+    id: "contact",
+    name: "Contact Me",
+    link: "/contact",
+  },
 ];
+
+export const name = "Daniel Onaolapo"

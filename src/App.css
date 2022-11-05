@@ -1,4 +1,4 @@
-.App {
+.Home {
   margin-top: 1rem;
   padding: 1rem;
   text-align: center;
@@ -7,12 +7,12 @@
   overflow: hidden;
 }
 
-.shareBtn{
-    position: absolute;
-    left: 85%;
+.shareBtn {
+  position: absolute;
+  left: 85%;
 }
 
-header  {
+header {
   margin: 1rem 0;
   position: relative;
 }
@@ -52,18 +52,66 @@ hr {
 }
 
 footer {
-    margin: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    flex-wrap: wrap;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
-@media(max-width: 700px) {
-    footer {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: .6rem;
-    }
+@media (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+}
+
+.contact {
+  margin-top: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.contact input,
+label, textarea {
+  display: block;
+}
+
+.contact__body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact__header h1 {
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+.contact_header p {
+  font-size: 1.25rem;
+}
+
+.contact__body input {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.contact__body textarea {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.contact__body label {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.contact__body .splitted {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }

@@ -11,7 +11,7 @@ import {
 
 const Home = () => {
     return (
-      <div className="App">
+      <div className="Home">
         <header>
           <img
             src={window.innerWidth < 500 ? shareSm : shareBg}
